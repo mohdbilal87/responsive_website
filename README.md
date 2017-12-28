@@ -13,7 +13,8 @@ Following are the files with their brief description:
 </ul>
 
 ## Markup Checks
-HTML markup check done @ with No error and Warnings.
+HTML markup check done @ https://validator.w3.org/ with No error and Warnings.
+
 CSS markup check done @ http://jigsaw.w3.org/css-validator/ with No Error.
 
 ## Running the project.
