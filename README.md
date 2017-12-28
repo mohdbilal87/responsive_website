@@ -12,6 +12,10 @@ Following are the files with their brief description:
     <li>css/main.css: This file does hte styling of index.html</li>
 </ul>
 
+## Inspiration
+@ http://erikbue.com/
+
+
 ## Markup Checks
 HTML markup check done @ https://validator.w3.org/ with No error and Warnings.
 
