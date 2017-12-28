@@ -1,0 +1,232 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #2D3C49;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+article, aside, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  min-height: 50px;
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.header__logo {
+  text-align: left;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  width: 90%;
+  text-align: right;
+  margin: auto;
+}
+
+.header__title > a{
+  text-decoration: none;
+  color: blue;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.header__title > a:hover {
+  color: red;
+}
+
+.intro {
+  background-color: #AE70FF;
+  width: 70%;
+  min-height: 50vh;
+  margin: auto;
+}
+
+.intro span {
+  display: block;
+  font-size: 2.5em;
+  font-weight: 400;
+  padding-left: 10%;
+  color: #FECB79;
+}
+
+.me {
+  padding-left: 10%;
+  padding-top: 10%;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 6em;
+  color: white;
+}
+
+.whatido {
+  font-weight: 400;
+  font-size: 3em;
+  padding-left: 10%;
+  padding-top: 1%;
+}
+
+.services {
+    font-weight: 400;
+    font-size: 2em;
+    padding-left: 12%;
+    color: #FECB79;
+}
+
+.projects {
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.description {
+  width: 100%;
+  font-weight: 400;
+  font-size: 2em;
+  padding-left: 8%;
+  padding-top: 5%;
+  color: #7d97ad;
+}
+
+.sample_projects {
+width: 100%;
+margin : 10px auto;
+display: flex;
+flex-wrap: wrap;
+}
+
+figure img {
+  display: block;
+  vertical-align: top;
+}
+
+.project_desc {
+  margin-left: 5%;
+  margin-top: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.project_desc > a {
+  text-decoration: none;
+  color: black;
+}
+
+.project_desc .title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.project_desc .brief {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1em;
+  width: 70%;
+  min-height: 50px;
+  font-size: 1.5em;
+  margin: auto;
+  border-top: 3px solid #d2d7da;
+}
+
+footer a {
+  padding-left: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: red;
+}
+
+@media screen and (max-device-width: 500px) {
+    .intro, .header, footer, .projects {
+         width: 90%;
+         margin: auto;
+    }
+
+    .header__title > a {
+      text-decoration: none;
+      color: blue;
+      font-weight: 400;
+      font-size: 15px;
+      padding: 2px;
+    }
+
+    .header__logo {
+      height: 50px;
+      width: 80px;
+      margin-top: 5px;
+    }
+
+    .me {
+      padding-left: 10%;
+      padding-top: 10%;
+      font-family: "Source Sans Pro";
+      font-weight: 600;
+      font-size: 4em;
+      color: white;
+    }
+
+    .whatido {
+      font-weight: 400;
+      font-size: 2em;
+      padding-left: 10%;
+      padding-top: 1%;
+    }
+
+    .project_desc .title {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .project_desc .brief {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .sample_projects img {
+      width: 300px;
+    }
+}
