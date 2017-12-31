@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,21 +9,34 @@ body, html {
 body {
   font-family: Roboto;
   font-size: 12px;
-  color: #2D3C49;
+  color: #2d3c49;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-article, aside, footer, header, hgroup, nav, section {
-  display: block;
+
+header,
+nav,
+footer,
+section,
+article,
+div {
+  box-sizing: border-box;
 }
 
-header, nav, footer, section, article, div {
-  box-sizing: border-box;
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -46,6 +60,7 @@ main {
 .header__logo {
   text-align: left;
   vertical-align: top;
+  max-width: 100px;
   margin-top: 12px;
 }
 
@@ -55,7 +70,7 @@ main {
   margin: auto;
 }
 
-.header__title > a{
+.header__title > .header_link {
   text-decoration: none;
   color: blue;
   font-weight: 400;
@@ -63,23 +78,15 @@ main {
   padding: 20px;
 }
 
-.header__title > a:hover {
+.header__title > .header_link:hover {
   color: red;
 }
 
 .intro {
-  background-color: #AE70FF;
+  background-color: #ae70ff;
   width: 70%;
   min-height: 50vh;
   margin: auto;
-}
-
-.intro span {
-  display: block;
-  font-size: 2.5em;
-  font-weight: 400;
-  padding-left: 10%;
-  color: #FECB79;
 }
 
 .me {
@@ -93,16 +100,25 @@ main {
 
 .whatido {
   font-weight: 400;
-  font-size: 3em;
+  font-size: 2.5em;
   padding-left: 10%;
   padding-top: 1%;
 }
 
+.service_title {
+  font-size: 3em;
+  font-weight: 400;
+  padding-left: 10%;
+  padding-top: 5%;
+  color: #fecb79;
+}
+
 .services {
     font-weight: 400;
-    font-size: 2em;
-    padding-left: 12%;
-    color: #FECB79;
+    font-size: 0.8em;
+    color: #fecb79;
+    padding-left: 5%;
+
 }
 
 .projects {
@@ -129,9 +145,9 @@ display: flex;
 flex-wrap: wrap;
 }
 
-figure img {
-  display: block;
+.project_img{
   vertical-align: top;
+  max-width: 400px;
 }
 
 .project_desc {
@@ -140,7 +156,7 @@ figure img {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.project_desc > a {
+.project_desc > .project_desc_link {
   text-decoration: none;
   color: black;
 }
@@ -183,7 +199,7 @@ footer a:hover {
          margin: auto;
     }
 
-    .header__title > a {
+    .header__title > .header_link {
       text-decoration: none;
       color: blue;
       font-weight: 400;
@@ -214,7 +230,6 @@ footer a:hover {
     }
 
     .project_desc .title {
-      display: block;
       text-align: left;
       font-weight: bold;
       font-size: 20px;
@@ -226,7 +241,7 @@ footer a:hover {
       font-size: 16px;
     }
 
-    .sample_projects img {
+    .sample_projects .project_img {
       width: 300px;
     }
 }

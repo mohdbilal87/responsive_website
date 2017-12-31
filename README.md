@@ -9,16 +9,14 @@ All the files are kept under the directory **responsive_website_assignment2.**
 Following are the files with their brief description:
 <ul>
     <li>index.html: This file structures the content on the webpage.</li>
-    <li>css/main.css: This file does hte styling of index.html</li>
+    <li>css/main.css: This file does the styling of index.html</li>
 </ul>
 
 ## Inspiration
 @ http://erikbue.com/
 
-
 ## Markup Checks
 HTML markup check done @ https://validator.w3.org/ with No error and Warnings.
-
 CSS markup check done @ http://jigsaw.w3.org/css-validator/ with No Error.
 
 ## Running the project.
