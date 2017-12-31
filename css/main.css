@@ -141,6 +141,7 @@ main {
 .sample_projects {
 width: 100%;
 margin : 10px auto;
+min-height: 25vh;
 display: flex;
 flex-wrap: wrap;
 }
@@ -193,6 +194,12 @@ footer a:hover {
   color: red;
 }
 
+@media screen and (min-device-width: 501px) and (max-device-width: 1000px){
+  .sample_projects {
+    min-height: 20vh;
+  }
+}
+
 @media screen and (max-device-width: 500px) {
     .intro, .header, footer, .projects {
          width: 90%;
@@ -227,6 +234,10 @@ footer a:hover {
       font-size: 2em;
       padding-left: 10%;
       padding-top: 1%;
+    }
+
+    .sample_projects {
+      min-height: 20vh;
     }
 
     .project_desc .title {
